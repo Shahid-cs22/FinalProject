@@ -1,0 +1,75 @@
+.nav-wrapper {
+  padding: 15px;
+  background: #f5f5f5;
+}
+
+.custom-navbar {
+  background: #fff;
+  border-radius: 50px;
+  padding: 12px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.logo span {
+  color: red;
+}
+
+/* Links */
+.nav-links .nav-link {
+  margin-left: 15px;
+  color: #333;
+}
+
+
+
+.logout-btn {
+  border-radius: 25px;
+  padding: 5px 18px;
+  background: transparent;
+  color: red;
+  border: 1px solid red;
+}
+
+.logout-btn:hover {
+  background: red;
+  color: white;
+}
+
+.mega-dropdown .dropdown-menu {
+  width: 650px;
+  padding: 20px;
+}
+
+.mega-dropdown{
+    font-weight: bold;
+}
+
+.mega-menu h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mega-menu .dropdown-item {
+  padding: 5px 0;
+}
+
+.restit{
+    font-weight:bold;}
+
+
+@media (max-width: 768px) {
+  .mega-dropdown .dropdown-menu {
+    width: 100%;     /* full width */
+    padding: 10px;
+  }
+
+  .mega-menu h6 {
+    margin-top: 10px;
+  }
+}
