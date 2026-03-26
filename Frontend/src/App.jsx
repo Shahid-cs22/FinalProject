@@ -1,6 +1,7 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header/Header';
+import Home from './pages/Home/Home';
 
 
 const App = () => {
@@ -9,11 +10,11 @@ const App = () => {
   return (
     <>
 
-    <Header/>
+      <Header />
 
-     
-      <h1>hello</h1>
-   
+      <Home />
+
+
     </>
   )
 }
