@@ -8,6 +8,11 @@ import img3 from "../../assets/images/Home/cp1.webp"
 import img4 from "../../assets/images/Home/cp2.webp"
 import img5 from "../../assets/images/Home/cp3.webp"
 import img6 from "../../assets/images/Home/cp4.webp"
+import img7 from "../../assets/images/Home/cp5.webp"
+import img8 from "../../assets/images/Home/cp6.webp"
+import img9 from "../../assets/images/Home/cp7.webp"
+import img10 from "../../assets/images/Home/cp8.webp"
+import img11 from "../../assets/images/Home/cp9.webp"
 
 function Home() {
 
@@ -19,13 +24,31 @@ function Home() {
         { name: "Manufacturing", jobs: "4,290 Jobs", icon: "🏭", link: "/jobs/manufacturing" }
     ];
 
-    // const companyDetails = [
-    //     {logo :cp1, name:"cp1", link:"https://company1.com"},
-    //     {logo :cp2, name:"cp2", link:"https://company2.com"},
-    //     {logo :cp3, name:"cp3", link:"https://company3.com"},
-    //     {logo :cp4, name:"cp4", link:"https://company4.com"}
-    // ]
-    
+    const companyData = [
+        { img: img3 },
+        { img: img4 },
+        { img: img5 },
+        { img: img6 },
+        { img: img7 },
+        { img: img8 },
+        { img: img9 },
+        { img: img10 },
+        { img: img11 }
+    ];
+
+    const countryData = [
+        { img: country1, name: "Mumbai" },
+        { img: country2, name: "Delhi" },
+        { img: country3, name: "Bangalore" },
+        { img: country4, name: "Hyderabad" },
+        { img: country5, name: "Chennai" },
+        { img: country6, name: "Pune" },
+        { img: country7, name: "Kolkata" },
+        { img: country8, name: "Ahmedabad" }
+    ]
+
+
+
 
     const scrollRef = useRef();
     return (
@@ -130,49 +153,46 @@ function Home() {
                 </div>
             </div>
 
-{/*             
-            <div className="category-wrapperr">
-                <div>
-                    {companyDetails.map((item, index) => (
 
-                        <a href={item.link} className="category-link" key={index}>
-                            <div className="category-card">
-                                <div className="icon">{item.icon}</div>
-                                <div>
-                                    <h6>{item.name}</h6>
-
-                                  
+            <div className="logo-section">
+                <Container>
+                    <Row className="rowwise justify-content-center ">
+                        {companyData.map((company, index) => (
+                            <Col
+                                key={index} xs={6} sm={4} md={3} lg={2} className="mb-4 d-flex justify-content-center">
+                                <div className="logo-box">
+                                    <img src={company.img} alt={company.name} />
                                 </div>
-                            </div>
-                        </a>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+            </div>
 
-                        
-                       
+            <div className="city-section">
+                <Container>
+                    <h4 className="citytext text-center">
+                        Top Consultants in Your City
+                    </h4>
 
-                    ))}
-                </div>
-            </div> */}
-
-
-            <div className="companyHiring">
-                <h2 className="companyTitle">Top Companies Hiring Now</h2>
-                <Row className="align-items-center">
-                    <Col lg={3} sm={6} className="text-center ">
-                        <img src={img3} alt="" />
-                    </Col>
-                    <Col lg={3} sm={6} className="text-center">
-                        <img src={img4} alt="" />
-                    </Col>
-                    <Col lg={3} sm={6} className="text-center">
-                        <img src={img5} alt="" />
-                    </Col>
-                    <Col lg={3} sm={6} className="text-center">
-                        <img src={img6} alt="" />
-                    </Col>
-
-                </Row>
-
-
+                    <Row className="justify-content-center">
+                        {countryData.map((country, index) => (
+                            <Col
+                                key={index}
+                                xs={6}
+                                sm={4}
+                                md={3}
+                                lg={2}
+                                className="mb-4 d-flex justify-content-center"
+                            >
+                                <div className="city-box text-center">
+                                    <img src={country.img} alt={country.name} />
+                                    <p>{country.name}</p>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
             </div>
         </>
     );
