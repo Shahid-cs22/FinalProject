@@ -12,8 +12,8 @@ import "./Header.css";
 
 function Header() {
   return (
-    <div className="nav-wrapper">
-      <Navbar expand="lg" className="custom-navbar">
+    <div className="nav-wrapper position-fixed w-100 opacity-1">
+      <Navbar expand="lg" className="custom-navbar ">
         <Container>
 
           {/* Logo */}
@@ -72,7 +72,8 @@ function Header() {
             {/* Right Menu */}
             <Nav className="ms-auto align-items-center gap-3">
               <Nav.Link className="profile-link">Profile</Nav.Link>
-              <Button className="logout-btn">Logout</Button>
+              <Button className="logout-btn ">Logout</Button>
+              <Button className="logout-btn">Register</Button>
             </Nav>
 
           </Navbar.Collapse>
