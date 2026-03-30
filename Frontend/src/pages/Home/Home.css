@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .hero-section {
   background: #eef3f8;
   padding: 60px 0;
@@ -20,7 +26,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -31,7 +37,7 @@
   border-radius: 0;
 }
 
-.input-desktop:focus{
+.input-desktop:focus {
   outline: none;
   box-shadow: none;
 }
@@ -44,7 +50,7 @@
   background: #ff3b3b;
   border: none;
   border-radius: 50px;
-  padding:10px 50px;
+  padding: 10px 50px;
   color: white;
   font-weight: 600;
 }
@@ -52,7 +58,7 @@
 .btn-search:active {
   background: #ff3b3bdc;
   box-shadow: none;
-} 
+}
 
 .search-mobile {
   display: flex;
@@ -65,14 +71,127 @@
   padding: 14px;
   border: none;
   background: #fff;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
 
 .hero-img {
   max-width: 100%;
+  margin-top: 50px;
 }
 
+.companyTitle {
+  font-weight: 700;
+}
+
+/* hello */
+
+.category-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(to right, #dbe6f6, #cfd9df);
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Scroll container */
+.category-scroll {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card style */
+.category-card {
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon */
+.icon {
+  font-size: 24px;
+  color: #ff6b6b;
+}
+
+/* Text */
+.category-card h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.category-card p {
+  margin: 0;
+  font-size: 13px;
+  color: gray;
+}
+
+/* Navigation buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: #fff;
+  width: 35px;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-btn.left {
+  left: 0;
+}
+
+.nav-btn.right {
+  right: 0;
+}
+
+.nav-btn:hover {
+  background: #f1f1f1;
+}
+
+.category-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-link:hover {
+  text-decoration: none;
+}
+
+.category-wrapperr{
+  margin: 0 100px;
+  background-color: none;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.companyHiring{
+  text-align: center;
+  margin-top: 20px;
+}
 
 @media (max-width: 768px) {
   .hero-title {
@@ -88,7 +207,13 @@
     padding: 10px 30px;
   }
 
-  .image .hero-img{
+  .boxPage1 {
+    background-color: #ff3b3b;
+    margin-top: 20%;
+  }
+
+
+  .image .hero-img {
     display: none;
   }
 }

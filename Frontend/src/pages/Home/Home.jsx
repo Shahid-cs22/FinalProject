@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./Home.css";
 import img1 from "../../assets/images/home1.png"
@@ -10,8 +10,28 @@ import img5 from "../../assets/images/Home/cp3.webp"
 import img6 from "../../assets/images/Home/cp4.webp"
 
 function Home() {
+
+    const categories = [
+        { name: "Freshers", jobs: "23,525 Jobs", icon: "🎓", link: "/jobs/freshers" },
+        { name: "IT", jobs: "72,103 Jobs", icon: "💻", link: "/jobs/it" },
+        { name: "Sales & Marketing", jobs: "27,435 Jobs", icon: "📈", link: "https://github.com/Shahid-cs22" },
+        { name: "Operations", jobs: "13,373 Jobs", icon: "⚙️", link: "/jobs/operations" },
+        { name: "Manufacturing", jobs: "4,290 Jobs", icon: "🏭", link: "/jobs/manufacturing" }
+    ];
+
+    // const companyDetails = [
+    //     {logo :cp1, name:"cp1", link:"https://company1.com"},
+    //     {logo :cp2, name:"cp2", link:"https://company2.com"},
+    //     {logo :cp3, name:"cp3", link:"https://company3.com"},
+    //     {logo :cp4, name:"cp4", link:"https://company4.com"}
+    // ]
+    
+
+    const scrollRef = useRef();
     return (
+
         <>
+
             <div className="hero-section">
                 <Container>
                     <Row className="align-items-center">
@@ -92,69 +112,62 @@ function Home() {
                 </Container>
             </div>
 
-            <div className="boxPage">
+            <div className="category-wrapperr">
+                <div className="category-scroll" ref={scrollRef}>
+                    {categories.map((item, index) => (
 
-                <Row className="">
-                    <Col lg={3} sm={3} className="text-center">
-                        <div className="textBox">
-                            <SchoolOutlinedIcon />   Fresher
-                        </div>
-                        <div className="vacancy">
-                            1000+ Vacancies
-                        </div>
+                        <a href={item.link} className="category-link" key={index}>
+                            <div className="category-card">
+                                <div className="icon">{item.icon}</div>
+                                <div>
+                                    <h6>{item.name}</h6>
+                                    <p>{item.jobs}</p>
+                                </div>
+                            </div>
+                        </a>
 
-                    </Col>
-                    <Col lg={3} sm={3} className="text-center">
-                        <div className="textBox">
-                            <SchoolOutlinedIcon />   Fresher
-                        </div>
-                        <div className="vacancy">
-                            1000+ Vacancies
-                        </div>
-
-                    </Col>
-                    <Col lg={3} sm={3} className="text-center">
-                        <div className="textBox">
-                            <SchoolOutlinedIcon />   Fresher
-                        </div>
-                        <div className="vacancy">
-                            1000+ Vacancies
-                        </div>
-
-                    </Col>
-                    <Col lg={3} sm={3} className="text-center">
-                        <div className="textBox">
-                            <SchoolOutlinedIcon />   Fresher
-                        </div>
-                        <div className="vacancy">
-                            1000+ Vacancies
-                        </div>
-
-                    </Col>
-
-                </Row>
-                <Row className="mt-4">
-                    <Col lg={12} sm={12} className="text-center">
-                        <img src={img2} alt="" />
-                    </Col>
-                </Row>
-
+                    ))}
+                </div>
             </div>
+
+{/*             
+            <div className="category-wrapperr">
+                <div>
+                    {companyDetails.map((item, index) => (
+
+                        <a href={item.link} className="category-link" key={index}>
+                            <div className="category-card">
+                                <div className="icon">{item.icon}</div>
+                                <div>
+                                    <h6>{item.name}</h6>
+
+                                  
+                                </div>
+                            </div>
+                        </a>
+
+                        
+                       
+
+                    ))}
+                </div>
+            </div> */}
+
 
             <div className="companyHiring">
                 <h2 className="companyTitle">Top Companies Hiring Now</h2>
                 <Row className="align-items-center">
-                    <Col lg={3} sm={6} className="text-center">
-                    <img src={img3} alt="" />
+                    <Col lg={3} sm={6} className="text-center ">
+                        <img src={img3} alt="" />
                     </Col>
                     <Col lg={3} sm={6} className="text-center">
-                    <img src={img4} alt="" />
+                        <img src={img4} alt="" />
                     </Col>
                     <Col lg={3} sm={6} className="text-center">
-                    <img src={img5} alt="" />
+                        <img src={img5} alt="" />
                     </Col>
                     <Col lg={3} sm={6} className="text-center">
-                    <img src={img6} alt="" />
+                        <img src={img6} alt="" />
                     </Col>
 
                 </Row>
