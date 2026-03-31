@@ -3,7 +3,6 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./Home.css";
 import img1 from "../../assets/images/home1.png"
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
-import img2 from "../../assets/images/tj_rsgl1.webp"
 import img3 from "../../assets/images/Home/cp1.webp"
 import img4 from "../../assets/images/Home/cp2.webp"
 import img5 from "../../assets/images/Home/cp3.webp"
@@ -13,6 +12,17 @@ import img8 from "../../assets/images/Home/cp6.webp"
 import img9 from "../../assets/images/Home/cp7.webp"
 import img10 from "../../assets/images/Home/cp8.webp"
 import img11 from "../../assets/images/Home/cp9.webp"
+import count1 from "../../assets/images/Home/country1.svg"
+import count2 from "../../assets/images/Home/country2.svg"
+import count3 from "../../assets/images/Home/country3.svg"
+import count4 from "../../assets/images/Home/country4.svg"
+import count5 from "../../assets/images/Home/country5.svg"
+import count6 from "../../assets/images/Home/country6.svg"
+import count7 from "../../assets/images/Home/country7.svg"
+import count8 from "../../assets/images/Home/country8.svg"
+import data1 from "../../assets/images/Home/big.webp"
+import data2 from "../../assets/images/Home/big2.webp"
+import job from "../../assets/images/Home/seekers.webp"
 
 function Home() {
 
@@ -37,14 +47,14 @@ function Home() {
     ];
 
     const countryData = [
-        { img: country1, name: "Mumbai" },
-        { img: country2, name: "Delhi" },
-        { img: country3, name: "Bangalore" },
-        { img: country4, name: "Hyderabad" },
-        { img: country5, name: "Chennai" },
-        { img: country6, name: "Pune" },
-        { img: country7, name: "Kolkata" },
-        { img: country8, name: "Ahmedabad" }
+        { img: count1, name: "Mumbai", link: "/jobs/dev" },
+        { img: count2, name: "Delhi", link: "/jobs/freshers" },
+        { img: count3, name: "Bangalore", link: "/jobs/freshers" },
+        { img: count4, name: "Hyderabad", link: "/jobs/freshers" },
+        { img: count5, name: "Chennai", link: "/jobs/freshers" },
+        { img: count6, name: "Pune", link: "/jobs/freshers" },
+        { img: count7, name: "Kolkata", link: "/jobs/freshers" },
+        { img: count8, name: "Ahmedabad", link: "/jobs/freshers" }
     ]
 
 
@@ -150,16 +160,26 @@ function Home() {
                         </a>
 
                     ))}
+
                 </div>
+
+            </div>
+            <div className="image-picture ">
+                <Container>
+                    <div className="laptop-screen ">  <img src={data1} alt="" className="img-fluid" /></div>
+                    <div className="mobile-screen"><img src={data2} alt="" className="img-fluid" /></div>
+                </Container>
             </div>
 
 
             <div className="logo-section">
                 <Container>
+                    <p className="text-center companytext" >Top Companies Hiring Now</p>
                     <Row className="rowwise justify-content-center ">
                         {companyData.map((company, index) => (
+
                             <Col
-                                key={index} xs={6} sm={4} md={3} lg={2} className="mb-4 d-flex justify-content-center">
+                                key={index} xs={4} sm={4} md={3} lg={2} className="mb-4 d-flex justify-content-center">
                                 <div className="logo-box">
                                     <img src={company.img} alt={company.name} />
                                 </div>
@@ -171,29 +191,50 @@ function Home() {
 
             <div className="city-section">
                 <Container>
-                    <h4 className="citytext text-center">
+                    <p className="citytext text-center">
                         Top Consultants in Your City
-                    </h4>
+                    </p>
 
                     <Row className="justify-content-center">
+
                         {countryData.map((country, index) => (
+
                             <Col
-                                key={index}
-                                xs={6}
-                                sm={4}
-                                md={3}
-                                lg={2}
+                                key={index} xs={4} sm={4} md={3} lg={2}
                                 className="mb-4 d-flex justify-content-center"
                             >
-                                <div className="city-box text-center">
-                                    <img src={country.img} alt={country.name} />
-                                    <p>{country.name}</p>
-                                </div>
+                                <a href={country.link} className="category-link">
+                                    <div className="city-box text-center ">
+                                        <img src={country.img} alt={country.name} className="city-img" />
+                                        <p className="justify-content-center">{country.name}</p>
+                                    </div>
+                                </a>
                             </Col>
                         ))}
                     </Row>
+
+                    <Button className="view-all-btn justify-content-center">view all</Button>
+
                 </Container>
+            </div >
+
+            <div className="top-requirements text-center pt-4">
+                <p className="requires">
+                    <span className="requires-text">Top Recruiters</span>  <br />
+                    Top Talent Seekers
+                </p>
+
+                <Row className="justify-content-center">
+                    <Col xs={6} sm={4} md={3} lg={6} className="mb-4 d-flex justify-content-center">
+                    <div className="require-image">
+                        <img src={job} alt="" />
+                    </div>
+                    </Col>
+                </Row>
+
             </div>
+
+
         </>
     );
 }
