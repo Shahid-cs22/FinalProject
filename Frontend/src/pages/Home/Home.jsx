@@ -23,6 +23,10 @@ import count8 from "../../assets/images/Home/country8.svg"
 import data1 from "../../assets/images/Home/big.webp"
 import data2 from "../../assets/images/Home/big2.webp"
 import job from "../../assets/images/Home/seekers.webp"
+import req1 from "../../assets/images/Home/require1.png"
+import req2 from "../../assets/images/Home/require2.png"
+import req3 from "../../assets/images/Home/require3.png"
+import req4 from "../../assets/images/Home/require4.png"
 
 function Home() {
 
@@ -226,13 +230,38 @@ function Home() {
 
                 <Row className="justify-content-center">
                     <Col xs={6} sm={4} md={3} lg={6} className="mb-4 d-flex justify-content-center">
-                    <div className="require-image">
-                        <img src={job} alt="" />
-                    </div>
+                        <div className="require-image">
+                            <img src={job} alt="" />
+                        </div>
                     </Col>
-                </Row>
 
-            </div>
+
+                    <Col lg={2}>
+                        <div className="jobimage">
+                            <img src={req1} alt="" />
+                            <p>Amazon <span>188 Jobs</span></p>
+                        </div>
+                    </Col>
+                    <Col lg={2}>
+                        <div className="jobimage">
+                            <img src={req2} alt="" />
+                            <p>Adobe <span>57 Jobs</span></p>
+                        </div></Col>
+                    <Col lg={2}>
+                        <div className="jobimage">
+                            <img src={req3} alt="" />
+                            <p>nVida <span>188 Jobs</span></p>
+                        </div>
+                    </Col>
+
+
+
+
+
+
+                </Row >
+
+            </div >
 
 
         </>

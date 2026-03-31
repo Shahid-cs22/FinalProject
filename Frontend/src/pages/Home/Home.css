@@ -96,7 +96,6 @@
   overflow: hidden;
 }
 
-/* Scroll container */
 .category-scroll {
   display: flex;
   gap: 15px;
@@ -274,7 +273,7 @@
 }
 
 .top-requirements{
-  background-color: #d7dcdfad;
+  background-color: #efececad;
 }
 .requires{
   font-size: 30px;
@@ -282,6 +281,19 @@
 }
 .requires-text{
   font-size: 20px;
+}
+.reqsub-image{
+  display: flex;
+}
+
+.reqsub-image img{
+  max-height: 20px;
+}
+
+.jobimage img{
+  width: 50px;
+  margin-top: 50%;
+  background-color: #ff3b3b;
 }
 
 @media (max-width: 768px) {
