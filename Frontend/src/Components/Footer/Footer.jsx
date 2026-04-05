@@ -1,67 +1,76 @@
-import React from 'react'
-import "./Footer.css"
-import img1 from "../../assets/images/Home/cp1.webp"
-import { Col, Row } from 'react-bootstrap'
+import React from "react";
+import "./Footer.css";
+
+// MUI Icons
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import XIcon from "@mui/icons-material/X";
 
 const Footer = () => {
-    return (
-        <>
-            <div className="mainblock">
+  return (
+    <footer className="footer">
+      <div className="footer-container">
 
-                <Row className='justify-content-center align-center mainblock1 '>
-                    <Col lg={2} className='content1'>
-                        <h3 className='footercol1'>Follow US</h3>
-                        <p className='footercol2'>Job<span className='footer-span'>Leo</span></p>
-                    </Col>
+        {/* LEFT */}
+        <div className="footer-section">
+          <h4>Follow us</h4>
+          <h2 className="logo">
+            TIMES<span>JOBS</span>
+          </h2>
 
-                    <Col lg={2} className='content1'>
-                        <h3 className='footercol1'>Company</h3>
-                        <p>About us</p>
-                        <p>Privacy Policy</p>
-                        <p>Terms of use</p>
-                        <p>Contact us</p>
-                    </Col>
+          <div className="social-icons">
+            <FacebookIcon />
+            <LinkedInIcon />
+            <YouTubeIcon />
+            <XIcon />
+          </div>
+        </div>
 
-                    <Col lg={2} className='content1'>
-                        <h3 className='footercol1'>For Candicate</h3>
-                        <p >Create Resume</p>
-                    </Col>
+        {/* Company */}
+        <div className="footer-section">
+          <h4>Company</h4>
+          <p>About us</p>
+          <p>Privacy Policy</p>
+          <p>Terms of use</p>
+          <p>Contact us</p>
+        </div>
 
-                    <Col lg={2} className='content1'>
-                        <h3 className='footercol1'>For Employee</h3>
-                        <p>Post a Job</p>
-                    </Col>
+        {/* Candidate */}
+        <div className="footer-section">
+          <h4>For Candidate</h4>
+          <p>Create Resume</p>
+        </div>
 
-                    <Col lg={2} className='content1'>
-                        <h3 className='footercol1'>HelpFull Resource</h3>
-                        <p>Site Map</p>
-                        <p>Security Advisor</p>
-                        <p>Fraud Alert</p>
-                    </Col>
+        {/* Employer */}
+        <div className="footer-section">
+          <h4>For Employer</h4>
+          <p>Post a Job</p>
+        </div>
 
-                    <Col lg={2} className='content1'>
-                        <h3 className='footercol1'>Our Product</h3>
-                       <div className="images">
-                        <img src={img1} alt="" /> <br /><br />
-                        <img src={img1} alt="" /><br /><br />
-                        <img src={img1} alt="" />
-                       </div>
-                    </Col>
+        {/* Resources */}
+        <div className="footer-section">
+          <h4>Helpful Resources</h4>
+          <p>Site Map</p>
+          <p>Security Advice</p>
+          <p>Fraud Alert</p>
+        </div>
 
+        {/* Products */}
+        <div className="footer-section">
+          <h4>Our Products</h4>
 
+          <div className="product-box">TECHGIG</div>
+          <div className="product-box">OUTSPARK</div>
 
-                </Row>
+          <div className="app-box">
+            Download our app for job updates
+          </div>
+        </div>
 
+      </div>
+    </footer>
+  );
+};
 
-
-
-
-
-            </div>
-
-
-        </>
-    )
-}
-
-export default Footer
+export default Footer;
