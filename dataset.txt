@@ -1,8 +1,8 @@
 company 1:{
 
 heading:SAP PaPM Consultant Job Details | msg global solutions
-Job Description
-Job Position ID: 9885
+
+job_id: 9885
 
 Job Title: SAP PaPM Consultant
 
@@ -12,46 +12,10 @@ Employment Type: Full Time
 
 Work Model: Hybrid
 
-Who we are
-msg global solutions is a systems integrator, software development partner, and managed services provider focused on SAP solutions for multiple industries. Our services include strategies for accounting, finance, regulatory reporting, performance management, sustainability, customer experience, and IoT. Operating from offices across the globe and growing, we help clients achieve operational efficiency and improve decision-making capabilities. With deep industry knowledge, technical expertise, and a diverse range of perspectives, our people spark change and create innovative solutions to complex operational issues. Our goal is to create long-lasting client relationships built on trust and dependability.
+ovweview: On the Forma Preconstruction team at Autodesk, our mission is to help teams meet the world's rapidly expanding building and infrastructure needs, while making construction more predictable, safe and sustainable. Over $100 billion in new construction is managed on our platform every month. From major stadiums to local schools and hospitals, our tools are helping cities grow and communities come together.
 
-msg global solutions is part of msg, an independent, international group of companies with more than 10,000 employees around the world.
-
-What we do
-The Analytics Business Unit provides consulting, implementation, training, architecture, and installation services for profitability and sustainability management based on SAPs analytics solutions SAP Analytics Cloud (SAC), PaPM, Sustainability Control Tower (SCT), Data Warehouse Cloud (DWC) and others. We co-develop the SAP PaPM application and content packages providing standard functionality for various use cases and industries. Our team combines functional, technical, and industry expertise on cost allocations, financial planning/budgeting, intercompany transfer pricing, product/service costing, IT costing, tax calculations, funds/liquidity transfer pricing, cost-to-serve, planning simulation, and sustainability. We help our clients in many industries across the globe become more profitable and sustainable, increase operational transparency and control, and create a better basis for decision-making. We are a global, diverse, and inspiring team and offer the opportunity to extend personal and professional capabilities, by working for a leading strategic SAP partner.
-
-What you will do
-Work on the implementation of SAP Analytics solutions to clients across multiple industries (Insurance, Banking, Retail, High Tech, etc.)
-Deliver high quality services on time and budget
-Support presales demos, RFP/RFI process, client demonstrations and business development initiatives
-Work collaboratively with a team of consultants
-Communicate effectively with clients and team/project leads
-Support in creation and maintenance of analytics solutions
-Support in analysis of technical and functional integration requirements
-Promote and participate in sharing expertise, strengthening msg globals collective knowledge
-Develop your knowledge and extend project experience in SAPs newest and future solutions
-What we are looking for
-Minimum 3 years of relevant consulting or corporate experience
-University degree (preferably in finance, accounting, controlling, computer science, or business analytics) or other equivalent experience
-Understanding of financial or controlling processes, like budgeting, cost allocations, profitability or tax calculations
-Ability to be creative, flexible, and adaptable in a changing work environment
-Understanding of the technology and how it affects clients' area of the business, trends associated with the technology, value propositions for clients
-Excellent written and verbal communication skills
-Fluent in English (oral and in writing)
-Ability to travel up to 80  PERCENT 
-Must be legally authorized to work in XXX without the need for employer sponsorship, now or at any time in the future
-Nice to have
-Work experience in implementations of analytical or reporting solutions in the consulting or as an advanced business user
-Experience in SAP full life-cycle implementations, preferably with PaPM, SAP HANA Developer / Analyst, SAP Analytics Cloud and/or BPC
-Technical or functional expertise in SAP applications/modules like SAP PaPM, SAC, BW, HANA, BPC, PCM, COPA or S/4
-Technical knowledge in SAP, preferably HANA, SQL and BW modelling
-Fluent in local language in the country of employment (oral and in writing)
-What we offer
-A place where individuals are equally valued and where diversity and cultural differences are cherished.
-A global team of highly respected SAP and industry experts where you can make a difference.
-Competitive salaries and a broad range of benefits, some of which are highlighted below.
-About msg global solutions
-msg global is an Equal Opportunity Employer. Equal Employment Opportunity has been, and will continue to be, a fundamental principle for us. At the heart of this policy is our commitment that we make job related decisions based on the job related criteria. More specifically, employment is based on personal capabilities and qualifications without discrimination based on race, color, religion, sex, age, national origin, disability, sexual orientation, marital status, ancestry, veteran status or any other protected characteristic as established by law. These principles are to be applied to policies and procedures relating to recruitment and hiring, compensation, benefits, termination and all other terms and conditions of employment.
+As a Principal UX Designer on the Preconstruction team, you will be responsible for design strategy to implementation for the Takeoff product and quantification workflows targeting a range of preconstruction personas. To be successful, you should be comfortable working through ambiguity, driving simplicity out of complexity, and collaborating with a globally distributed team of product managers, engineers, designers & researchers. This role requires a diverse skill set including conceptual UX, systems thinking, prototyping, storytelling, and user research. We're looking for someone who is a champion for human-centered design, a relentless advocate for user needs, and has a track record of driving design in complex problem spaces to deliver compelling user experiences.
+ 
 
 Key Details
 Job Function: IT Software : Software Products & Services
