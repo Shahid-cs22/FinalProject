@@ -1,21 +1,33 @@
-import React from 'react'
-import { Col, Row } from 'react-bootstrap'
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Job = () => {
-  return (
-    <div className="main-div" style={{ paddingTop: "10%", margin: "0 200px" }}>
-      <Row>
-        <Col lg={4}>
-          <div className="sub1" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ratione error quisquam sunt dolores saepe quibusdam dolor perferendis nesciunt expedita.</div>
-        </Col>
-        <Col lg={8}>
-          <div className="sub2"><h4>Title</h4><br /><h5>subTitle</h5></div>
-          <div className="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nostrum?</div>
-          <button>view all</button>
-        </Col>
-      </Row>
-    </div>
-  )
-}
+  const [jobs, setJobs] = useState([]);
 
-export default Job 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get("/data.json");
+        setJobs(Object.values(res.data));
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div className="mx-5" style={{paddingTop:"15%"}}>
+      {jobs.map((job, index) => (
+        <div key={index}>
+          <h3>{job.heading}</h3>
+          <h5>{job.graduate_courses.join(", ")}</h5>
+          <p>{job.location}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Job;
