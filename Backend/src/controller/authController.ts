@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
-import Job from "../models/jobs"
+import Jobs from "../models/jobs"
 
 
 export const createJob = async (req: Request, res: Response) => {
   try {
-    const job = await Job.create(req.body);
+    const job = await Jobs.create(req.body);
     res.status(201).json(job);
   } catch (error) {
     res.status(500).json({ message: "Error creating job", error });
@@ -14,7 +14,7 @@ export const createJob = async (req: Request, res: Response) => {
 
 export const getJobs = async (req: Request, res: Response) => {
   try {
-    const jobs = await Job.find();
+    const jobs = await Jobs.find();
     res.status(200).json(jobs);
   } catch (error) {
     res.status(500).json({ message: "Error fetching jobs" });
@@ -24,7 +24,7 @@ export const getJobs = async (req: Request, res: Response) => {
 
 export const getJobById = async (req: Request, res: Response) => {
   try {
-    const job = await Job.findById(req.params.id);
+    const job = await Jobs.findById(req.params.id);
 
     if (!job) {
       return res.status(404).json({ message: "Job not found" });
@@ -39,7 +39,7 @@ export const getJobById = async (req: Request, res: Response) => {
 
 export const updateJob = async (req: Request, res: Response) => {
   try {
-    const job = await Job.findByIdAndUpdate(req.params.id, req.body, {
+    const job = await Jobs.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
     });
 
@@ -56,7 +56,7 @@ export const updateJob = async (req: Request, res: Response) => {
 
 export const deleteJob = async (req: Request, res: Response) => {
   try {
-    const job = await Job.findByIdAndDelete(req.params.id);
+    const job = await Jobs.findByIdAndDelete(req.params.id);
 
     if (!job) {
       return res.status(404).json({ message: "Job not found" });

@@ -7,8 +7,8 @@ const Job = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("/data.json");
-        setJobs(Object.values(res.data));
+        const res = await axios.get("http://localhost:5000/api/jobs");
+        setJobs(res.data); // no need Object.values if already array
       } catch (error) {
         console.log(error);
       }
@@ -18,10 +18,10 @@ const Job = () => {
   }, []);
 
   return (
-    <div className="mx-5" style={{paddingTop:"15%"}}>
-      {jobs.map((job, index) => (
-        <div key={index}>
-          <h3>{job.heading}</h3>
+    <div className="mx-5" style={{ paddingTop: "15%" }}>
+      {jobs.map((job) => (
+        <div key={job.id}>
+          <h3>{job.job_title}</h3>
           <h5>{job.graduate_courses.join(", ")}</h5>
           <p>{job.location}</p>
         </div>
