@@ -39,7 +39,7 @@ function Header() {
                     <Col xs={12} md={6} lg={4}>
                       <h6>Jobs by Category</h6>
                       <NavDropdown.Item as={Link} to="/jobs/it-software">IT Software Jobs</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/jobs/bpo">BPO Jobs</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/jobs/bpo-jobs">BPO Jobs</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/jobs/sales">Sales Jobs</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/jobs/fresher">Fresher Jobs</NavDropdown.Item>
                     </Col>

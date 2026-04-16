@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./Job.css"
+import "./Job2.css"
 
-const Job = () => {
+const Job2 = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
@@ -20,6 +20,7 @@ const Job = () => {
 
   return (
     <div className="">
+        This is JOBN2
       <div className="mx-5  " style={{ paddingTop: "15%" }}>
         {jobs.map((job) => (
           <div key={job.id} className="main">
@@ -39,4 +40,4 @@ const Job = () => {
   );
 };
 
-export default Job;
+export default Job2;

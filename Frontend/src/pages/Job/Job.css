@@ -1,0 +1,32 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+.main{
+    background-color: rgba(255, 182, 193, 0.295);
+    margin: 20px;   
+
+}
+
+
+.heading{
+    font-size: 18px;
+    font-weight: bold;
+}
+.title{
+    font-weight: bolder;
+}
+
+.btnbtn{
+    background-color: brown;
+    margin: 0 25px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+
+.btnbtn:active{
+    background-color: rgba(165, 42, 42, 0.712);
+}
