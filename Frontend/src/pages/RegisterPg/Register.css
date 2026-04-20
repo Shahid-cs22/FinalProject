@@ -1,0 +1,20 @@
+.registerPage{
+    margin:0, 50px;
+}
+
+.image img{
+    margin-top: 50px;
+}
+
+.main-div{
+   text-align: center;
+}
+
+.para{
+    padding-top: 50px;
+   
+}
+
+.col1{
+    background-color: rgba(32, 178, 171, 0.633);
+}

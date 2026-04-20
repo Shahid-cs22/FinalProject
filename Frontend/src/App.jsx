@@ -6,6 +6,7 @@ import Footer from './Components/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Job from './pages/Job/Job';
 import Job2 from './pages/Job2/Job2';
+import Register from './pages/RegisterPg/Register';
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/jobs/it-software' element={<Job />} />
         <Route path='/jobs/bpo-jobs' element={<Job2 />} />
+        <Route path='/register' element={<Register />} />
 
 
       </Routes>
