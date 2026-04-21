@@ -1,16 +1,22 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Job.css";
-import { Col, Row } from "react-bootstrap"
+import { Col, Row, Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
 
 const Job = () => {
   const [jobs, setJobs] = useState([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await axios.get("http://localhost:5000/api/jobs");
-        setJobs(res.data);
+
+
+        const shuffledJobs = res.data.sort(() => Math.random() - 0.5);
+
+        setJobs(shuffledJobs);
       } catch (error) {
         console.log(error);
       }
@@ -20,45 +26,49 @@ const Job = () => {
   }, []);
 
   return (
-    // <div className="">
-    //   <div className="mx-5  " style={{ paddingTop: "15%" }}>
-    //     {jobs.map((job) => (
-    //       <div key={job.id} className="main">
-    //         <p className="heading">{job.heading}</p>
-    //         <p className="title">{job.job_title}</p>
+    <Container className="maindiv">
+      <Row>
+        {jobs.map((job) => (
+          <Col key={job.id} xs={12} md={6} lg={4} className="mb-4">
+            <div className="job-card">
 
-    //       <p className="overview">{job.overview}</p>
-    //         <h5>{job.graduate_courses.join(", ")}</h5>
-    //         <h6>{job.key_skills.join(", ")}</h6>
-    //         <p>{job.location}</p>
 
-    //         <input type="button" value="View Details" className="btnbtn" />
-    //       </div>
-    //     ))}
-    //   </div>
-    //   </div>
-    <>
+              <div className="job-header">
+                <div className="logo">🏢</div>
+                <div>
+                  <h5 className="job-title">{job.job_title}</h5>
+                  <p className="company">{job.heading}</p>
+                </div>
+              </div>
 
-      <Row className="">
+              {/* Description */}
+              <p className="desc">{job.overview}</p>
 
-        <Col xs={12} md={6} lg={4}>
-          {jobs.map((job) => (
-            <div key={job.id} className="pt-5" style={{backgroundColor:"lightgray"}}>
+              {/* Tags */}
+              <div className="tags">
+                {job.key_skills?.slice(0, 4).map((skill, index) => (
+                  <span key={index} className="tag">{skill}</span>
+                ))}
+              </div>
 
-              {job.heading} <br />
-              {job.job_title}
+              {/* Footer */}
+              <div className="job-footer">
+                <span>📍 {job.location}</span>
+                <span>⏳ {job.experience || "Not disclosed"}</span>
+              </div>
 
+              {/* Button */}
+              <button
+                className="view-btn"
+                onClick={() =>
+                  navigate(`/job/${job.job_id}`, { state: job })
+                }>View Details </button>
 
             </div>
-          ))}
-
-        </Col>
-
-
+          </Col>
+        ))}
       </Row>
-
-
-    </>
+    </Container>
   );
 };
 

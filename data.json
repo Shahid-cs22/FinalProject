@@ -1,4 +1,4 @@
-data = ([
+const data = [
   { 
     heading: "SAP PaPM Consultant Job Details | msg global solutions",
     job_id: "9885",
@@ -82,5 +82,92 @@ data = ([
     job_type: "Hybrid",
     gender: "No Preference",
     key_skills: ["React", "Node.js", "MongoDB", "Express"]
+  },
+
+  // 🔥 NEW JOBS
+
+  { 
+    heading: "DevOps Engineer Job | Accenture",
+    job_id: "9890",
+    job_title: "DevOps Engineer",
+    location: "Mumbai, MH, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Manage CI/CD pipelines and cloud infrastructure.",
+    job_function: "DevOps",
+    industry: "IT Services",
+    specialization: "Cloud & DevOps",
+    graduate_courses: ["B.Tech", "MCA"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["AWS", "Docker", "Kubernetes", "Jenkins"]
+  },
+
+  { 
+    heading: "Data Analyst Job | Capgemini",
+    job_id: "9891",
+    job_title: "Data Analyst",
+    location: "Kolkata, WB, IN",
+    employment_type: "Full Time",
+    work_model: "Remote",
+    overview: "Analyze data and generate business insights.",
+    job_function: "Data Analysis",
+    industry: "IT Services",
+    specialization: "Analytics",
+    graduate_courses: ["B.Sc", "BCA", "B.Tech"],
+    job_type: "Remote",
+    gender: "No Preference",
+    key_skills: ["Python", "SQL", "Power BI", "Excel"]
+  },
+
+  { 
+    heading: "Machine Learning Engineer Job | IBM",
+    job_id: "9892",
+    job_title: "Machine Learning Engineer",
+    location: "Bangalore, KA, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Build and deploy machine learning models.",
+    job_function: "AI/ML",
+    industry: "IT Services",
+    specialization: "Machine Learning",
+    graduate_courses: ["B.Tech", "M.Tech"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["Python", "TensorFlow", "Scikit-learn", "Deep Learning"]
+  },
+
+  { 
+    heading: "Cyber Security Analyst Job | Deloitte",
+    job_id: "9893",
+    job_title: "Cyber Security Analyst",
+    location: "Gurgaon, HR, IN",
+    employment_type: "Full Time",
+    work_model: "Onsite",
+    overview: "Monitor and secure systems against cyber threats.",
+    job_function: "Security",
+    industry: "IT Services",
+    specialization: "Cyber Security",
+    graduate_courses: ["B.Tech", "BCA"],
+    job_type: "Onsite",
+    gender: "No Preference",
+    key_skills: ["Network Security", "SIEM", "Ethical Hacking", "Firewalls"]
+  },
+
+  { 
+    heading: "Mobile App Developer Job | Zoho",
+    job_id: "9894",
+    job_title: "Mobile App Developer",
+    location: "Chennai, TN, IN",
+    employment_type: "Full Time",
+    work_model: "Onsite",
+    overview: "Develop mobile apps for Android and iOS platforms.",
+    job_function: "App Development",
+    industry: "Software Products",
+    specialization: "Mobile Development",
+    graduate_courses: ["B.Tech", "BCA"],
+    job_type: "Onsite",
+    gender: "No Preference",
+    key_skills: ["Flutter", "React Native", "Kotlin", "Swift"]
   }
-])
+];

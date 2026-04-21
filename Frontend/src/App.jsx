@@ -7,6 +7,8 @@ import { Route, Routes } from 'react-router-dom';
 import Job from './pages/Job/Job';
 import Job2 from './pages/Job2/Job2';
 import Register from './pages/RegisterPg/Register';
+import JobDetails from './pages/JobDetails/JobDetails';
+import Login from './pages/Login/Login';
 
 
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
         <Route path='/jobs/it-software' element={<Job />} />
         <Route path='/jobs/bpo-jobs' element={<Job2 />} />
         <Route path='/register' element={<Register />} />
+          <Route path="/job/:id" element={<JobDetails />} />
+             <Route path="/login" element={<Login />} />
 
 
       </Routes>

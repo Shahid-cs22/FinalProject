@@ -1,20 +1,13 @@
-.registerPage{
-    margin:0, 50px;
+.whatsapp-box {
+  background: #eef3f7;
+  padding: 12px 15px;
+  border-radius: 10px;
 }
 
-.image img{
-    margin-top: 50px;
+.cursor-pointer {
+  cursor: pointer;
 }
 
-.main-div{
-   text-align: center;
-}
-
-.para{
-    padding-top: 50px;
-   
-}
-
-.col1{
-    background-color: rgba(32, 178, 171, 0.633);
+.login-container{
+    padding-top: 80px;
 }

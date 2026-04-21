@@ -1,0 +1,67 @@
+.login-container {
+  background: #f5f7fa;
+  padding-top: 80px;
+}
+
+/* LEFT SECTION */
+.left-section {
+  background: linear-gradient(135deg, #e3f0ff, #f7fbff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.left-content {
+  max-width: 400px;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 280px;
+  margin-top: 20px;
+}
+
+/* RIGHT SECTION */
+.login-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* BUTTON */
+.login-btn {
+  background-color: #ff4d4f !important;
+  border: none !important;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* 🔥 MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .left-section {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .left-content h1 {
+    font-size: 24px;
+  }
+
+  .left-content p {
+    font-size: 14px;
+  }
+
+  .hero-img {
+    max-width: 220px;
+  }
+
+  .login-box {
+    margin: 20px;
+    padding: 25px;
+  }
+}

@@ -71,7 +71,7 @@ function Header() {
          
             <Nav className="ms-auto align-items-center gap-3">
               <Nav.Link as={Link} to="/profile" className="profile-link">Profile</Nav.Link>
-              <Button as={Link} to="/logout" className="logout-btn">Logout</Button>
+              <Button as={Link} to="/login" className="logout-btn">Login</Button>
               <Button as={Link} to="/register" className="logout-btn">Register</Button>
             </Nav>
 

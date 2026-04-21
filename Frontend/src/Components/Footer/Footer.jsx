@@ -15,7 +15,7 @@ const Footer = () => {
         {/* LEFT */}
         <div className="footer-section">
           <h4>Follow us</h4>
-          <h2 className="logo">
+          <h2 className="">
             TIMES<span>JOBS</span>
           </h2>
 
