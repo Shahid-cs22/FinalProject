@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./Job2.css";
+import "./Job5.css";
 import { Col, Row, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 
-const Job2 = () => {
+const Job5 = () => {
   const [jobs, setJobs] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/jobs");
+        const res = await axios.get("http://localhost:5000/api/java");
 
 
         const shuffledJobs = res.data.sort(() => Math.random() - 0.5);
@@ -72,4 +72,4 @@ const Job2 = () => {
   );
 };
 
-export default Job2;
+export default Job5;

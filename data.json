@@ -171,3 +171,439 @@ const data = [
     key_skills: ["Flutter", "React Native", "Kotlin", "Swift"]
   }
 ];
+
+
+//java
+
+db["javas"].insertMany([
+  {
+    heading: "Java Developer Job | Infosys",
+    job_id: "9895",
+    job_title: "Java Developer",
+    location: "Bangalore, KA, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Develop scalable Java applications and backend services.",
+    job_function: "Software Development",
+    industry: "IT Services",
+    specialization: "Backend Development",
+    graduate_courses: ["B.Tech", "BCA", "MCA"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["Java", "Spring Boot", "Hibernate", "REST API"]
+  },
+
+  {
+    heading: "Senior Java Developer Job | TCS",
+    job_id: "9896",
+    job_title: "Senior Java Developer",
+    location: "Chennai, TN, IN",
+    employment_type: "Full Time",
+    work_model: "Onsite",
+    overview: "Lead backend systems and microservices architecture.",
+    job_function: "Software Development",
+    industry: "IT Services",
+    specialization: "Backend",
+    graduate_courses: ["B.Tech", "M.Tech"],
+    job_type: "Onsite",
+    gender: "No Preference",
+    key_skills: ["Java", "Spring", "Microservices", "SQL"]
+  },
+
+  {
+    heading: "Java Full Stack Developer Job | Wipro",
+    job_id: "9897",
+    job_title: "Java Full Stack Developer",
+    location: "Hyderabad, TS, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Build full stack applications using Java and Angular.",
+    job_function: "Software Development",
+    industry: "IT Services",
+    specialization: "Full Stack",
+    graduate_courses: ["B.Tech", "BCA"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["Java", "Angular", "Spring Boot", "MySQL"]
+  },
+
+  {
+    heading: "Java Backend Engineer Job | Accenture",
+    job_id: "9898",
+    job_title: "Java Backend Engineer",
+    location: "Pune, MH, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Design backend systems and RESTful APIs.",
+    job_function: "Software Development",
+    industry: "Consulting",
+    specialization: "Backend",
+    graduate_courses: ["B.Tech", "MCA"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["Java", "Spring Boot", "Microservices", "AWS"]
+  },
+
+  {
+    heading: "Java Microservices Developer Job | Capgemini",
+    job_id: "9899",
+    job_title: "Java Microservices Developer",
+    location: "Mumbai, MH, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Develop cloud-native microservices using Java.",
+    job_function: "Software Development",
+    industry: "IT Services",
+    specialization: "Microservices",
+    graduate_courses: ["B.Tech", "MCA"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["Java", "Spring Boot", "Docker", "Kubernetes"]
+  }
+]);
+
+//content writer
+
+db["writers"].insertMany([
+  { 
+    heading: "Content Writer Job | Zoho",
+    job_id: "9900",
+    job_title: "Content Writer",
+    location: "Chennai, TN, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Create engaging content for blogs and marketing materials.",
+    job_function: "Content Writing",
+    industry: "IT Services",
+    specialization: "Digital Content",
+    graduate_courses: ["B.A", "B.Sc", "B.Com"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["Content Writing", "SEO", "Copywriting", "Editing"]
+  },
+
+  { 
+    heading: "SEO Content Writer Job | Infosys",
+    job_id: "9901",
+    job_title: "SEO Content Writer",
+    location: "Bangalore, KA, IN",
+    employment_type: "Full Time",
+    work_model: "Remote",
+    overview: "Write SEO-optimized articles and website content.",
+    job_function: "Content Writing",
+    industry: "IT Services",
+    specialization: "SEO",
+    graduate_courses: ["B.A", "B.Com", "BBA"],
+    job_type: "Remote",
+    gender: "No Preference",
+    key_skills: ["SEO", "Content Writing", "Keyword Research", "Blogging"]
+  },
+
+  { 
+    heading: "Technical Content Writer Job | TCS",
+    job_id: "9902",
+    job_title: "Technical Content Writer",
+    location: "Hyderabad, TS, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Create technical documentation and product guides.",
+    job_function: "Content Writing",
+    industry: "IT Services",
+    specialization: "Technical Writing",
+    graduate_courses: ["B.Tech", "B.Sc", "MCA"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["Technical Writing", "Documentation", "Research", "Editing"]
+  },
+
+  { 
+    heading: "Copywriter Job | Wipro",
+    job_id: "9903",
+    job_title: "Copywriter",
+    location: "Pune, MH, IN",
+    employment_type: "Full Time",
+    work_model: "Onsite",
+    overview: "Write compelling marketing and advertising copy.",
+    job_function: "Content Writing",
+    industry: "IT Services",
+    specialization: "Copywriting",
+    graduate_courses: ["B.A", "BBA"],
+    job_type: "Onsite",
+    gender: "No Preference",
+    key_skills: ["Copywriting", "Creative Writing", "Branding", "Editing"]
+  },
+
+  { 
+    heading: "Blog Writer Job | HCL",
+    job_id: "9904",
+    job_title: "Blog Writer",
+    location: "Noida, UP, IN",
+    employment_type: "Full Time",
+    work_model: "Remote",
+    overview: "Write engaging blogs for tech and business topics.",
+    job_function: "Content Writing",
+    industry: "IT Services",
+    specialization: "Blog Writing",
+    graduate_courses: ["B.A", "B.Com"],
+    job_type: "Remote",
+    gender: "No Preference",
+    key_skills: ["Blogging", "SEO", "Research", "Content Strategy"]
+  },
+
+  { 
+    heading: "Web Content Writer Job | Accenture",
+    job_id: "9905",
+    job_title: "Web Content Writer",
+    location: "Mumbai, MH, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Develop content for websites and landing pages.",
+    job_function: "Content Writing",
+    industry: "Consulting",
+    specialization: "Web Content",
+    graduate_courses: ["B.A", "BCA"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["Web Writing", "SEO", "CMS", "Editing"]
+  },
+
+  { 
+    heading: "Creative Content Writer Job | Capgemini",
+    job_id: "9906",
+    job_title: "Creative Content Writer",
+    location: "Kolkata, WB, IN",
+    employment_type: "Full Time",
+    work_model: "Remote",
+    overview: "Create creative and engaging content for campaigns.",
+    job_function: "Content Writing",
+    industry: "IT Services",
+    specialization: "Creative Writing",
+    graduate_courses: ["B.A", "BBA"],
+    job_type: "Remote",
+    gender: "No Preference",
+    key_skills: ["Creative Writing", "Storytelling", "Copywriting", "Editing"]
+  },
+
+  { 
+    heading: "Social Media Content Writer Job | IBM",
+    job_id: "9907",
+    job_title: "Social Media Content Writer",
+    location: "Bangalore, KA, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Manage and create content for social media platforms.",
+    job_function: "Content Writing",
+    industry: "IT Services",
+    specialization: "Social Media",
+    graduate_courses: ["B.A", "B.Com", "BBA"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["Social Media", "Content Writing", "Marketing", "Analytics"]
+  },
+
+  { 
+    heading: "Digital Content Writer Job | Deloitte",
+    job_id: "9908",
+    job_title: "Digital Content Writer",
+    location: "Gurgaon, HR, IN",
+    employment_type: "Full Time",
+    work_model: "Onsite",
+    overview: "Develop digital marketing content and campaigns.",
+    job_function: "Content Writing",
+    industry: "Consulting",
+    specialization: "Digital Marketing",
+    graduate_courses: ["B.A", "BBA"],
+    job_type: "Onsite",
+    gender: "No Preference",
+    key_skills: ["Digital Marketing", "SEO", "Content Writing", "Analytics"]
+  },
+
+  { 
+    heading: "Content Strategist Job | Freshworks",
+    job_id: "9909",
+    job_title: "Content Strategist",
+    location: "Chennai, TN, IN",
+    employment_type: "Full Time",
+    work_model: "Hybrid",
+    overview: "Plan and execute content strategies for products.",
+    job_function: "Content Writing",
+    industry: "SaaS",
+    specialization: "Content Strategy",
+    graduate_courses: ["B.A", "BBA", "B.Com"],
+    job_type: "Hybrid",
+    gender: "No Preference",
+    key_skills: ["Content Strategy", "SEO", "Analytics", "Planning"]
+  }
+]);
+
+//HR
+
+[{ 
+  heading: "HR Manager Job | Infosys",
+  job_id: "9910",
+  job_title: "HR Manager",
+  location: "Bangalore, KA, IN",
+  employment_type: "Full Time",
+  work_model: "Onsite",
+  overview: "Manage recruitment, employee relations, and HR operations.",
+  job_function: "Human Resources",
+  industry: "IT Services",
+  specialization: "HR Management",
+  graduate_courses: ["MBA", "BBA", "B.Com"],
+  job_type: "Onsite",
+  gender: "No Preference",
+  key_skills: ["Recruitment", "Employee Relations", "HR Policies", "Communication"]
+},
+
+{ 
+  heading: "Senior HR Manager Job | TCS",
+  job_id: "9911",
+  job_title: "Senior HR Manager",
+  location: "Chennai, TN, IN",
+  employment_type: "Full Time",
+  work_model: "Hybrid",
+  overview: "Lead HR strategies and manage organizational workforce planning.",
+  job_function: "Human Resources",
+  industry: "IT Services",
+  specialization: "HR Strategy",
+  graduate_courses: ["MBA", "MHRM"],
+  job_type: "Hybrid",
+  gender: "No Preference",
+  key_skills: ["HR Strategy", "Leadership", "Workforce Planning", "Policy Management"]
+},
+
+{ 
+  heading: "HR Operations Manager Job | Wipro",
+  job_id: "9912",
+  job_title: "HR Operations Manager",
+  location: "Hyderabad, TS, IN",
+  employment_type: "Full Time",
+  work_model: "Onsite",
+  overview: "Handle HR operations, payroll, and compliance processes.",
+  job_function: "Human Resources",
+  industry: "IT Services",
+  specialization: "HR Operations",
+  graduate_courses: ["MBA", "BBA"],
+  job_type: "Onsite",
+  gender: "No Preference",
+  key_skills: ["Payroll", "HR Operations", "Compliance", "HRIS"]
+},
+
+{ 
+  heading: "Talent Acquisition Manager Job | HCL",
+  job_id: "9913",
+  job_title: "Talent Acquisition Manager",
+  location: "Noida, UP, IN",
+  employment_type: "Full Time",
+  work_model: "Hybrid",
+  overview: "Lead hiring strategies and recruitment processes.",
+  job_function: "Human Resources",
+  industry: "IT Services",
+  specialization: "Recruitment",
+  graduate_courses: ["MBA", "BBA"],
+  job_type: "Hybrid",
+  gender: "No Preference",
+  key_skills: ["Recruitment", "Talent Acquisition", "Interviewing", "Sourcing"]
+},
+
+{ 
+  heading: "HR Business Partner Job | Accenture",
+  job_id: "9914",
+  job_title: "HR Business Partner",
+  location: "Mumbai, MH, IN",
+  employment_type: "Full Time",
+  work_model: "Hybrid",
+  overview: "Align HR strategies with business goals and support management.",
+  job_function: "Human Resources",
+  industry: "Consulting",
+  specialization: "HRBP",
+  graduate_courses: ["MBA"],
+  job_type: "Hybrid",
+  gender: "No Preference",
+  key_skills: ["HRBP", "Stakeholder Management", "HR Strategy", "Employee Engagement"]
+},
+
+{ 
+  heading: "HR Manager Job | Capgemini",
+  job_id: "9915",
+  job_title: "HR Manager",
+  location: "Kolkata, WB, IN",
+  employment_type: "Full Time",
+  work_model: "Onsite",
+  overview: "Oversee HR functions including hiring, training, and policies.",
+  job_function: "Human Resources",
+  industry: "IT Services",
+  specialization: "HR Management",
+  graduate_courses: ["MBA", "BBA"],
+  job_type: "Onsite",
+  gender: "No Preference",
+  key_skills: ["HR Management", "Training", "Policies", "Communication"]
+},
+
+{ 
+  heading: "Employee Relations Manager Job | IBM",
+  job_id: "9916",
+  job_title: "Employee Relations Manager",
+  location: "Bangalore, KA, IN",
+  employment_type: "Full Time",
+  work_model: "Hybrid",
+  overview: "Handle employee engagement, conflict resolution, and policies.",
+  job_function: "Human Resources",
+  industry: "IT Services",
+  specialization: "Employee Relations",
+  graduate_courses: ["MBA", "MSW"],
+  job_type: "Hybrid",
+  gender: "No Preference",
+  key_skills: ["Employee Relations", "Conflict Resolution", "HR Policies", "Engagement"]
+},
+
+{ 
+  heading: "HR Manager Job | Deloitte",
+  job_id: "9917",
+  job_title: "HR Manager",
+  location: "Gurgaon, HR, IN",
+  employment_type: "Full Time",
+  work_model: "Onsite",
+  overview: "Manage HR activities including recruitment and compliance.",
+  job_function: "Human Resources",
+  industry: "Consulting",
+  specialization: "HR Management",
+  graduate_courses: ["MBA"],
+  job_type: "Onsite",
+  gender: "No Preference",
+  key_skills: ["Recruitment", "Compliance", "HR Operations", "Leadership"]
+},
+
+{ 
+  heading: "HR Manager Job | Amazon",
+  job_id: "9918",
+  job_title: "HR Manager",
+  location: "Hyderabad, TS, IN",
+  employment_type: "Full Time",
+  work_model: "Onsite",
+  overview: "Lead HR processes and employee lifecycle management.",
+  job_function: "Human Resources",
+  industry: "E-Commerce",
+  specialization: "HR Operations",
+  graduate_courses: ["MBA", "BBA"],
+  job_type: "Onsite",
+  gender: "No Preference",
+  key_skills: ["HR Operations", "Employee Lifecycle", "Recruitment", "HRIS"]
+},
+
+{ 
+  heading: "HR Manager Job | Flipkart",
+  job_id: "9919",
+  job_title: "HR Manager",
+  location: "Bangalore, KA, IN",
+  employment_type: "Full Time",
+  work_model: "Hybrid",
+  overview: "Drive HR initiatives and manage workforce engagement.",
+  job_function: "Human Resources",
+  industry: "E-Commerce",
+  specialization: "HR Management",
+  graduate_courses: ["MBA"],
+  job_type: "Hybrid",
+  gender: "No Preference",
+  key_skills: ["HR Strategy", "Engagement", "Leadership", "Communication"]
+}]

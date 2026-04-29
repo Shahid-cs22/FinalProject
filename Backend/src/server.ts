@@ -4,6 +4,8 @@ import connectDB from "./config/db";
 import userRoutes from "./routes/userRoutes";
 import jobRoutes from "./routes/jobRoutes";
 import cors from "cors";
+import jrouter from "./routes/javaRoutes";
+import writerRouter from "./routes/writerRouters";
 dotenv.config();
 
 connectDB();
@@ -21,7 +23,8 @@ app.get("/", (req, res) => {
 // Routes
 app.use("/api/users", userRoutes);
 app.use("/api/jobs", jobRoutes);
-
+app.use("/api/java", jrouter);
+app.use("/api/writers", writerRouter);
 
 const PORT = process.env.PORT || 5000;
 

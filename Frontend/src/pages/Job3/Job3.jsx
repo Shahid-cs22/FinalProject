@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./Job2.css";
+import "./Job3.css";
 import { Col, Row, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 
-const Job2 = () => {
+const Job3 = () => {
   const [jobs, setJobs] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
@@ -72,4 +72,4 @@ const Job2 = () => {
   );
 };
 
-export default Job2;
+export default Job3;
