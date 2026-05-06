@@ -13,6 +13,8 @@ import Login from './pages/Login/Login';
 import Job4 from './pages/Job4/Job4';
 import Job5 from './pages/Job5/Job5';
 import Job6 from './pages/Job6/Job6';
+import Job7 from './pages/Job7/job7';
+import Job8 from './pages/Job8/Job8';
 
 
 const App = () => {
@@ -28,7 +30,9 @@ const App = () => {
         <Route path='/jobs/sales' element={<Job3 />} />
         <Route path='/jobs/fresher' element={<Job4 />} />
         <Route path='/jobs/java-developer' element={<Job5 />} />
-         <Route path='/jobs/content-writer' element={<Job6 />} />
+        <Route path='/jobs/content-writer' element={<Job6 />} />
+        <Route path='/jobs/hr' element={<Job7 />} />
+        <Route path='/jobs/chennai' element={<Job8 />} />
         <Route path='/register' element={<Register />} />
         <Route path="/job/:id" element={<JobDetails />} />
         <Route path="/login" element={<Login />} />

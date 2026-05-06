@@ -48,7 +48,7 @@ function Header() {
                       <h6>Jobs by Role</h6>
                       <NavDropdown.Item as={Link} to="/jobs/java-developer">Java Developer</NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/jobs/content-writer">Content Writer</NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/jobs/hr-manager">HR Manager</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/jobs/hr">HR Manager</NavDropdown.Item>
                     </Col>
 
                     <Col xs={12} md={6} lg={4}>

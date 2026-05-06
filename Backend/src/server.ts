@@ -6,6 +6,8 @@ import jobRoutes from "./routes/jobRoutes";
 import cors from "cors";
 import jrouter from "./routes/javaRoutes";
 import writerRouter from "./routes/writerRouters";
+import hrRouter from "./routes/hrRoutes";
+import chennaiRouter from "./routes/chennaiRoutes";
 dotenv.config();
 
 connectDB();
@@ -25,6 +27,8 @@ app.use("/api/users", userRoutes);
 app.use("/api/jobs", jobRoutes);
 app.use("/api/java", jrouter);
 app.use("/api/writers", writerRouter);
+app.use("/api/hr", hrRouter);
+app.use("/api/chennai", chennaiRouter)
 
 const PORT = process.env.PORT || 5000;
 
