@@ -15,6 +15,8 @@ import Job5 from './pages/Job5/Job5';
 import Job6 from './pages/Job6/Job6';
 import Job7 from './pages/Job7/job7';
 import Job8 from './pages/Job8/Job8';
+import Job9 from './pages/Job9/Job9';
+import Job10 from './pages/Job10/Job10';
 
 
 const App = () => {
@@ -33,6 +35,8 @@ const App = () => {
         <Route path='/jobs/content-writer' element={<Job6 />} />
         <Route path='/jobs/hr' element={<Job7 />} />
         <Route path='/jobs/chennai' element={<Job8 />} />
+        <Route path='/jobs/bangalore' element={<Job9 />} />
+        <Route path='/jobs/mumbai' element={<Job10 />} />
         <Route path='/register' element={<Register />} />
         <Route path="/job/:id" element={<JobDetails />} />
         <Route path="/login" element={<Login />} />

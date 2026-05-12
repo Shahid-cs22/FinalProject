@@ -62,7 +62,7 @@ function Header() {
                 </div>
               </NavDropdown>
 
-              <Nav.Link as={Link} to="/resume" className="restit">Resume</Nav.Link>
+              <Nav.Link href="https://myoutspark.com/lp/specialoffers/LFSL_IMG_2P_LP01_V10/index.html?utm_source=TimesJobs&utm_medium=DeskHeader&utm_campaign=HomePage" to="/resume" target="_blank" className="restit">Resume</Nav.Link>
               <Nav.Link as={Link} to="/service" className="restit">Service</Nav.Link>
               <Nav.Link as={Link} to="/stories" className="restit">Stories</Nav.Link>
 
